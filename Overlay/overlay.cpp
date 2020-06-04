@@ -239,7 +239,7 @@ HWND overlay::CreateOverlayWindow(
 		WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW, // window style
 		window_class.lpszClassName,		// window class
 		window_name.c_str(),			// window class name
-		WS_POPUP,				//window style
+		WS_POPUP,				// window style
 		rect.left,				// x position
 		rect.top,				// y position
 		std::abs(rect.right - rect.left),	// width
