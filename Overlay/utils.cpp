@@ -11,7 +11,7 @@ std::string utils::RandomString(int length)
 {
 	std::string result;
 
-	std::generate_n(result.begin(), length, []() -> char{
+	std::generate_n(result.begin(), length, []() -> char {
 		std::random_device rnd;
 		std::mt19937 mt(rnd());
 		return chars[mt() % (sizeof(chars) - 1)];
@@ -22,7 +22,7 @@ std::string utils::RandomString(int length)
 
 int utils::GetProcessId(const std::string& process_name)
 {
-	unique_handle snap_shot{ CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0), &CloseHandle };
+	unique_handle snap_shot { CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0), &CloseHandle };
 
 	if (snap_shot.get() == INVALID_HANDLE_VALUE)
 	{
