@@ -73,7 +73,7 @@ bool overlay::Initialize(
 		OUT_DEFAULT_PRECIS, 
 		ANTIALIASED_QUALITY, 
 		DEFAULT_PITCH | FF_DONTCARE, 
-		TEXT("Meiryo UI"),
+		TEXT(XORSTR("Meiryo UI")),
 		&detail::d3d9_font
 	);
 
