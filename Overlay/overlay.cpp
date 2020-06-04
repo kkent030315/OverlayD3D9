@@ -167,11 +167,11 @@ bool overlay::LaunchOverlay()
 	}
 
 	detail::overlay_thread_handle = CreateThread(
-		NULL,						// security attributes
-		0,							// stack size
-		OverlayRoutine,				// function
-		NULL,						// augments
-		0,							// option (0 or CREATE_SUSPENDED)
+		NULL,				// security attributes
+		0,				// stack size
+		OverlayRoutine,			// function
+		NULL,				// augments
+		0,				// option (0 or CREATE_SUSPENDED)
 		&detail::overlay_thread_id	// [OUT] thread id
 	);
 
@@ -237,17 +237,17 @@ HWND overlay::CreateOverlayWindow(
 
 	HWND result = CreateWindowEx(
 		WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW, // window style
-		window_class.lpszClassName,			// window class
-		window_name.c_str(),				// window class name
-		WS_POPUP,							//window style
-		rect.left,							// x position
-		rect.top,							// y position
+		window_class.lpszClassName,		// window class
+		window_name.c_str(),			// window class name
+		WS_POPUP,				//window style
+		rect.left,				// x position
+		rect.top,				// y position
 		std::abs(rect.right - rect.left),	// width
 		std::abs(rect.top - rect.bottom),	// height
-		NULL,								// parent window
-		NULL,								// menu handle or control id
-		window_class.hInstance,				// instance handle
-		NULL								// CREATESTRUCT structure
+		NULL,					// parent window
+		NULL,					// menu handle or control id
+		window_class.hInstance,			// instance handle
+		NULL					// CREATESTRUCT structure
 	);
 
 	if (result == NULL)
