@@ -1,12 +1,9 @@
 
 #include <iostream>
 
-
 #include "xor.hpp"
 #include "overlay.hpp"
 #include "utils.hpp"
-
-#include <dwmapi.h>
 
 LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -27,7 +24,7 @@ LRESULT CALLBACK WindowProcedure(HWND hWnd, UINT message, WPARAM wParam, LPARAM 
 
 int main()
 {
-	SetConsoleTitle(TEXT(""));
+	SetConsoleTitle(TEXT(XORSTR("")));
 
 	HWND hwnd = overlay::CreateOverlayWindow(
 		WindowProcedure,			// window procedure
