@@ -4,7 +4,8 @@ COORD utils::GetScreenSize()
 {
 	return { 
 		static_cast<short>(GetSystemMetrics(SM_CXSCREEN)), 
-		static_cast<short>(GetSystemMetrics(SM_CYSCREEN)) };
+		static_cast<short>(GetSystemMetrics(SM_CYSCREEN))
+	};
 }
 
 std::string utils::RandomString(int length)
