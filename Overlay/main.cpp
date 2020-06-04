@@ -27,15 +27,15 @@ int main()
 	SetConsoleTitle(TEXT(XORSTR("")));
 
 	HWND hwnd = overlay::CreateOverlayWindow(
-		WindowProcedure,			// window procedure
+		WindowProcedure,		// window procedure
 		utils::RandomString(10),	// class name
 		utils::RandomString(10),	// window name
 		{ 0, 0, 1920, 1080 }		// window rect
 	);
 
 	overlay::Initialize(
-		hwnd,							// window handle
-		{ 1920, 1080 },					// back buffer size
+		hwnd,				// window handle
+		{ 1920, 1080 },			// back buffer size
 		D3DPRESENT_INTERVAL_IMMEDIATE	// present interval
 	);
 
