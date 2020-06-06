@@ -186,7 +186,7 @@ bool overlay::LaunchOverlay()
 		detail::overlay_thread_handle, detail::overlay_thread_id
 	);
 
-	return false;
+	return true;
 }
 
 bool overlay::TerminateOverlay()
