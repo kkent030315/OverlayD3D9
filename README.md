@@ -19,13 +19,13 @@ Only supports win10 x64
 - FPS Counter  
 - String Xoring  
 - Draw Strings  
-L Custom Colors  
-L Auto Centering  
-L Outline For Visibility  
+`L` Custom Colors  
+`L` Auto Centering  
+`L` Outline For Visibility  
 - Draw Lines  
-L Custom Colors  
+`L` Custom Colors  
 - Draw Rectangles  
-L Custom Colors  
-L Outline For Visibility  
+`L` Custom Colors  
+`L` Outline For Visibility  
 - Draw Circles  
-L Custom Colors
+`L` Custom Colors
